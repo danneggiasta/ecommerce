@@ -6,11 +6,15 @@ Route::get('/show/{id}', 'ProductController@getById')->name('product.show');
 
 Route::get('/add-to-cart/{id}', 'ProductController@getAddToCart')->name('product.addToCart');
 
+Route::get('/reduce/{id}', 'ProductController@getReduceByOne')->name('product.reduceByOne');
+
+Route::get('/remove/{id}', 'ProductController@getRemoveItem')->name('product.remove');
+
 Route::get('/shopping-cart', 'ProductController@getCart')->name('product.shoppingCart');
 
-Route::get('/checkout', 'ProductController@getCheckout')->name('checkout');
+Route::get('/checkout', 'ProductController@getCheckout')->middleware('auth')->name('checkout');
 
-Route::post('/checkout', 'ProductController@postCheckout')->name('checkout');
+Route::post('/checkout', 'ProductController@postCheckout')->middleware('auth')->name('checkout');
 
 Auth::routes();
 

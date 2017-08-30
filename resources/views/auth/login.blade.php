@@ -1,9 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-
     <div class="row">
-        <div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3 mt-5">
+        <div class="col-sm-8 col-md-8 offset-md-4 offset-sm-4 mt-5">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
@@ -57,6 +56,8 @@
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
+                                <hr>
+                                <p>Don't have an account? <a class="btn btn-link"  href="{{ route('register') }}">Sign up instead!</a></p>
                             </div>
                         </div>
                     </form>

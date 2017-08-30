@@ -1,9 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
     <div class="row">
-        <div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3 mt-5">
+        <div class="col-sm-8 col-md-8 offset-md-4 offset-sm-4 mt-5">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
@@ -72,5 +71,5 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection

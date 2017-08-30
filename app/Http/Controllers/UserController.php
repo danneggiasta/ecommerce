@@ -12,6 +12,11 @@ class UserController extends Controller
     public function getProfile()
     {
         $users = User::find(1);
-    	return view('user.profile', compact('users'));
+        $orders = Auth::user()->orders;
+        $orders->transform(function($order, $key) {
+        	$order->cart = unserialize($order->cart);
+        	return $order;
+        });
+    	return view('user.profile', compact('users', 'orders'));
     }
 }
