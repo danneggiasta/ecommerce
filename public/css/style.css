@@ -19,6 +19,15 @@ a:hover {
 	text-decoration: none;
 }
 
+#sidebar ul {
+	list-style: square;
+
+}
+
+#sidebar ul h6 {
+	font-weight: bold;
+}
+
 
 @media (min-width: 992px) {
     body {

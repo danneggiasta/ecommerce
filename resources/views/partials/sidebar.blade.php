@@ -2,12 +2,12 @@
 
 	<h1 class="my-4">PC SHOP</h1>
 
-	<ul>
+	<ul class="mt-5">
 		@foreach($categories as $category)
 
 			<li>
 
-				{{ $category->name }}
+				<h6>{{ $category->name }}</h6>
 
 				@if ($category->subcategories->count())
 
@@ -17,7 +17,7 @@
 
 							<li>
 
-								<a href="">{{$subcategory->name}}</a>
+								<p><a href="">{{$subcategory->name}}</a></p>
 
 							</li>
 
@@ -35,4 +35,3 @@
 
 </div>
 <!-- /.col-lg-3 -->
-
