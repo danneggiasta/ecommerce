@@ -7,31 +7,30 @@
 body {
     padding-top: 54px;
     font-family: 'Saira', sans-serif;
-    	background: #fdfff9;
+    background: #fdfff9;
 }
 
 a {
-	color: #5e5e5e;
+    color: #5e5e5e;
 }
 
 a:hover {
-	color: #111;
-	text-decoration: none;
+    color: #111;
+    text-decoration: none;
 }
 
 #sidebar ul {
-	list-style: square;
+    list-style: square;
 
 }
 
 #sidebar ul h6 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .navbar a:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
-
 
 @media (min-width: 992px) {
     body {

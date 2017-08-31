@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-	protected $table = 'products';
+    protected $table = 'products';
 
     protected $fillable = ['imagePath', 'title', 'description', 'price', 'subcategory_id'];
 
     public function subcategory()
     {
-    	return $this->belongsTo(SubCategory::class);
+        return $this->belongsTo(SubCategory::class);
     }
 }

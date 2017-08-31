@@ -10,9 +10,9 @@
             <h1>Checkout</h1>
             <h4>Your Total: ${{ $total }}</h4>
             @if(Session::has('error'))
-            <div id="charge-error" class="alert alert-danger">
-                {{ Session::get('error') }}
-            </div>
+                <div id="charge-error" class="alert alert-danger">
+                    {{ Session::get('error') }}
+                </div>
             @endif
             <form action="{{ route('checkout') }}" method="post" id="checkout-form">
                 <div class="row">

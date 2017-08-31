@@ -12,31 +12,31 @@ class CategoryTableSeeder extends Seeder
     public function run()
     {
         $category = new \App\Category([
-        	'name' => 'Desktop PC'
+            'name' => 'Desktop PC'
         ]);
 
         $category->save();
-        
+
         $category = new \App\Category([
-        	'name' => 'Lap Top'
+            'name' => 'Lap Top'
         ]);
 
         $category->save();
-        
+
         $category = new \App\Category([
             'name' => 'PC Components'
         ]);
 
         $category->save();
-        
+
         $category = new \App\Category([
             'name' => 'PC Peripherals'
         ]);
 
         $category->save();
-        
+
         $category = new \App\Category([
-        	'name' => 'Software'
+            'name' => 'Software'
         ]);
 
         $category->save();

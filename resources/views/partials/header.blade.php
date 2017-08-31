@@ -23,8 +23,10 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user mr-1" aria-hidden="true"></i> {{{ isset(Auth::user()->name) ? Auth::user()->name : ' User' }}}
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user mr-1"
+                           aria-hidden="true"></i> {{{ isset(Auth::user()->name) ? Auth::user()->name : ' User' }}}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         @if(Auth::check())
