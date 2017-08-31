@@ -2,9 +2,10 @@
 
 @section('content')
     <div class="row">
-        <div class="col-sm-8 col-md-8 offset-md-4 offset-sm-4 mt-5">
+        <div class="col-lg-6 mx-auto mt-5">
             <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+                <h1>Login</h1>
+                <hr>
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}

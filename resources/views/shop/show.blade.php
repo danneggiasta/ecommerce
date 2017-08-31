@@ -10,7 +10,7 @@
 
         @include('partials.sidebar')
 
-        <div class="col-lg-6 offset-lg-2 col-md-6 mt-5 mb-5">
+        <div class="col-lg-7 mt-5 mb-5">
             <div class="card">
                 
                 <div class="card-block">

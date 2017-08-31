@@ -13,7 +13,7 @@
 
         @if(Session::has('success'))
         <div class="row">
-            <div class="col-sm-6 col-md-4 offset-md-4 offset-sm-3">
+            <div class="col-sm-6 col-md-4 mx-auto">
                 <div id="charge-message" class="alert alert-success">
                     {{ Session::get('success') }}
                 </div>
@@ -25,7 +25,7 @@
             <div class="row">
                 @foreach($productChunk as $product)
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4 mx-auto">
                     <div class="card h-100">
 
                         <div class="card-block">
@@ -46,8 +46,6 @@
 
         @endforeach
 
-        </div>
-        <!-- /.col-lg-9 -->
 
     </div>
     <!-- /.row -->

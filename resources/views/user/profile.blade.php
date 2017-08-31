@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="row">
-	<div class="mt-5 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
+	<div class="col-sm-6 col-md-6 mx-auto mt-5">
 		<h1>User Profile</h1>
 		<hr>
 		<h2>My Orders</h2>

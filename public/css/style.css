@@ -28,6 +28,10 @@ a:hover {
 	font-weight: bold;
 }
 
+.navbar a:hover {
+	cursor: pointer;
+}
+
 
 @media (min-width: 992px) {
     body {

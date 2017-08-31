@@ -1,4 +1,4 @@
-<div class="col-lg-7 offset-lg-1">
+<div class="col-lg-7 col-md-6">
 
 <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
     <ol class="carousel-indicators">

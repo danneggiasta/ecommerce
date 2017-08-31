@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-sm-6 col-md-4 offset-md-4 offset-sm-3 mt-5">
+        <div class="col-sm-6 col-md-6 mx-auto mt-5">
             <h1>Checkout</h1>
             <h4>Your Total: ${{ $total }}</h4>
             @if(Session::has('error'))

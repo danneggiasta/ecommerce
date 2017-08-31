@@ -2,9 +2,10 @@
 
 @section('content')
     <div class="row">
-        <div class="col-sm-8 col-md-8 offset-md-4 offset-sm-4 mt-5">
+        <div class="col-sm-6 col-md-6 mx-auto mt-5">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <h1>Register</h1>
+                <hr>
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
@@ -61,7 +62,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success form-control">
                                     Register
                                 </button>
                             </div>

@@ -1,11 +1,12 @@
 <!-- Navigation -->
-<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ route('product.index') }}">PC SHOP</a>
-        <div class="collapse navbar-collapse" id="navbarExample">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -17,12 +18,14 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('product.shoppingCart') }}">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
-                        <span class="badge badge-pill badge-default">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+                        <i class="fa fa-shopping-cart mr-2" aria-hidden="true"></i>Shopping Cart
+                        <span class="badge badge-secondary ml-1">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> {{{ isset(Auth::user()->name) ? Auth::user()->name : ' User' }}}</a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user mr-1" aria-hidden="true"></i> {{{ isset(Auth::user()->name) ? Auth::user()->name : ' User' }}}
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         @if(Auth::check())
                             <a class="dropdown-item" href="{{ route('user.profile') }}">Profile</a>

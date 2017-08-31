@@ -1,37 +1,37 @@
-<div id="sidebar" class="col-lg-2 offset-lg-1 col-md-2 offset-md-1">
+<div id="sidebar" class="col-lg-4 ml-5 col-md-4">
 
-	<h1 class="my-4">PC SHOP</h1>
+    <h1 class="my-4">PC SHOP</h1>
 
-	<ul class="mt-5">
-		@foreach($categories as $category)
+    <ul class="mt-5">
+        @foreach($categories as $category)
 
-			<li>
+            <li>
 
-				<h6>{{ $category->name }}</h6>
+                <h6>{{ $category->name }}</h6>
 
-				@if ($category->subcategories->count())
+                @if ($category->subcategories->count())
 
-					<ul>
+                    <ul>
 
-						@foreach($category->subcategories as $subcategory)
+                        @foreach($category->subcategories as $subcategory)
 
-							<li>
+                            <li>
 
-								<p><a href="">{{$subcategory->name}}</a></p>
+                                <p><a href="">{{$subcategory->name}}</a></p>
 
-							</li>
+                            </li>
 
-					@endforeach
+                        @endforeach
 
-					</ul>
+                    </ul>
 
-				@endif
+                @endif
 
-			</li>
+            </li>
 
-		@endforeach
-		
-	</ul>
+        @endforeach
+
+    </ul>
 
 </div>
 <!-- /.col-lg-3 -->
