@@ -4,6 +4,8 @@ Route::get('/', 'ProductController@getIndex')->name('product.index');
 
 Route::get('/show/{id}', 'ProductController@getById')->name('product.show');
 
+Route::get('/category/{subcategory_id}', 'ProductController@getBySubCategory')->name('product.category');
+
 Route::get('/add-to-cart/{id}', 'ProductController@getAddToCart')->name('product.addToCart');
 
 Route::get('/reduce/{id}', 'ProductController@getReduceByOne')->name('product.reduceByOne');

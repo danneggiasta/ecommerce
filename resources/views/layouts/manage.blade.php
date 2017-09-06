@@ -8,7 +8,7 @@
     <link href="{{ URL::to('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ URL::to('css/style.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('css/manage.css') }}" rel="stylesheet">
 
     <link href="{{ URL::to('css/sticky-footer.css') }}" rel="stylesheet">
 
@@ -44,7 +44,7 @@
 @include('partials.header')
 <div class="container-fluid">
     <div class="row">
-        @include('partials.nav-manage')
+        @include('partials.manage-sidebar')
 
         @yield('content')
     </div>

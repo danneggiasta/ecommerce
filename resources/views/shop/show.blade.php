@@ -10,7 +10,7 @@
 
         @include('partials.sidebar')
 
-        <div class="col-lg-7 mt-5 mb-5">
+        <div class="col-lg-7 ml-5 mt-5 mb-5">
             <div class="card">
 
                 <div class="card-block">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Category:</small>
-                    <p>{{ $product->subcategory->name }}</p>
+                    <p>{{ $product->sub_category->name }}</p>
                     <a href="{{ route('product.addToCart', ['id' => $product->id]) }}"
                        class="btn btn-success pull-right" role="button">Add to Cart</a>
                 </div>

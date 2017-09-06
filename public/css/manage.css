@@ -1,0 +1,50 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+    font-family: 'Saira', sans-serif;
+    background: #fdfff9;
+}
+
+a {
+    color: #5e5e5e;
+}
+
+a:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+.sidebar {
+	background: #f1f1f1 !important;
+	min-height: 100vh;
+	min-width: 220px;
+	padding: 40px 0 0 20px;
+}
+
+.sidebar p {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.sidebar .nav-link {
+	border-left: 1px solid #111;
+}
+
+.navbar {
+    box-shadow: 1px 2px 3px 3px #111;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}

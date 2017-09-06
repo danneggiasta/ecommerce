@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Cart;
 use App\Category;
+use App\SubCategory;
 use App\Order;
 use App\Product;
 use App\User;
@@ -32,6 +33,16 @@ class ProductController extends Controller
         $categories = Category::all();
 
         return view('shop.show', compact('product', 'categories'));
+    }
+
+    public function getBySubCategory($sub_category_id)
+    {
+
+        $product = Product::all();
+        $subcategory = SubCategory::find($sub_category_id);
+        $categories = Category::all();
+
+        return view('shop.category', compact('product', 'categories', 'subcategory'));
     }
 
     public function getAddToCart(Request $request, $id)

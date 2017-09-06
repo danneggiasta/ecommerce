@@ -1,37 +1,19 @@
-<div id="sidebar" class="col-lg-4 ml-5 col-md-4">
-
-    <h1 class="my-4">PC SHOP</h1>
-
-    <ul class="mt-5">
+<nav class="col-lg-2 col-sm-12 sidebar" id="sidebar">
+    <ul class="nav nav-pills flex-column">
         @foreach($categories as $category)
-
-            <li>
-
-                <h6>{{ $category->name }}</h6>
-
-                @if ($category->subcategories->count())
-
-                    <ul>
-
-                        @foreach($category->subcategories as $subcategory)
-
-                            <li>
-
-                                <p><a href="">{{$subcategory->name}}</a></p>
-
-                            </li>
-
-                        @endforeach
-
-                    </ul>
-
-                @endif
-
-            </li>
-
+            <a href="#{{ $category->id }}" class="collapsed"
+               data-toggle="collapse"
+               data-parent="#sidebar" aria-expanded="false"><p>{{ $category->name }}</p></a>
+            @if ($category->subcategories->count())
+                <div class="collapse" id="{{ $category->id }}">
+                    @foreach($category->subcategories as $subcategory)
+                        <li class="nav-item mb-3"><a class="nav-link"
+                                                     href="{{ route('product.category', $subcategory->id) }}"
+                                                     data-parent="#{{ $category->id }}">{{$subcategory->name}}</a>
+                        </li>
+                    @endforeach
+                </div>
+            @endif
         @endforeach
-
     </ul>
-
-</div>
-<!-- /.col-lg-3 -->
+</nav>

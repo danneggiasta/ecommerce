@@ -19,21 +19,68 @@ a:hover {
     text-decoration: none;
 }
 
-#sidebar ul {
-    list-style: square;
-
+.sidebar {
+    background: #f1f1f1 !important;
+    min-height: 100vh;
+    min-width: 220px;
+    padding: 40px 0 0 20px;
 }
 
-#sidebar ul h6 {
-    font-weight: bold;
+.sidebar p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#sidebar .nav-link {
+    border-left: 1px solid #111;
+}
+
+.navbar {
+    box-shadow: 1px 2px 3px 3px #111;
 }
 
 .navbar a:hover {
     cursor: pointer;
 }
 
-@media (min-width: 992px) {
-    body {
-        padding-top: 56px;
+.card {
+    box-shadow: 0 0 5px 1px #c1c1c1;
+}
+
+.card-block{
+    position: relative;
+    float: left;
+    padding: 55px 15px 150px 15px;
+}
+
+.card-img-top {
+    padding:10px;
+    position: relative;
+    max-width:  320px;
+    max-height: 220px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+}
+
+.card-footer {
+    border-top: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 15px 15px 15px;
+    width:100%;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .card-deck {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #sidebar {
+        min-height: 100px;
     }
 }

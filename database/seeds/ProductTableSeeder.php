@@ -16,7 +16,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Argos',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Aspernatur, quae quasi dolorum vel pariatur voluptatibus quis.',
             'price' => 400,
-            'subcategory_id' => 1
+            'sub_category_id' => 1
         ]);
 
         $product->save();
@@ -26,7 +26,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Asus II',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Asperna.',
             'price' => 500,
-            'subcategory_id' => 1
+            'sub_category_id' => 1
         ]);
 
         $product->save();
@@ -36,7 +36,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Red Fire',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Aspernatur, quae quasi doloru.',
             'price' => 600,
-            'subcategory_id' => 1
+            'sub_category_id' => 1
         ]);
 
         $product->save();
@@ -46,7 +46,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Asus Lap',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Aspernatur, quae quasi dolorum vel pariatur voluptatibus quis.',
             'price' => 700,
-            'subcategory_id' => 2
+            'sub_category_id' => 2
         ]);
 
         $product->save();
@@ -56,7 +56,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Dell',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Aspernatur, quae quasi dolorum vel pariatur voluptatibus quis.',
             'price' => 400,
-            'subcategory_id' => 2
+            'sub_category_id' => 2
         ]);
 
         $product->save();
@@ -66,7 +66,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'HP',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Aspernatur, quae quasi dolorum vel pariatur voluptatibus quis.',
             'price' => 120,
-            'subcategory_id' => 3
+            'sub_category_id' => 3
         ]);
 
         $product->save();
@@ -76,7 +76,7 @@ class ProductTableSeeder extends Seeder
             'title' => 'Acer',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic, natus tempora modi veniam. Aspernatur, quae quasi dolorum vel pariatur voluptatibus quis.',
             'price' => 130,
-            'subcategory_id' => 3
+            'sub_category_id' => 3
         ]);
 
         $product->save();

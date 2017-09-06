@@ -8,9 +8,9 @@ class Product extends Model
 {
     protected $table = 'products';
 
-    protected $fillable = ['imagePath', 'title', 'description', 'price', 'subcategory_id'];
+    protected $fillable = ['imagePath', 'title', 'description', 'price', 'sub_category_id'];
 
-    public function subcategory()
+    public function sub_category()
     {
         return $this->belongsTo(SubCategory::class);
     }

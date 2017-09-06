@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->integer('price');
-            $table->integer('subcategory_id');
+            $table->integer('sub_category_id');
         });
     }
 
