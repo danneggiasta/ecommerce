@@ -41,15 +41,20 @@
     @yield('styles')
 </head>
 <body>
-@include('partials.header')
-<div class="container-fluid">
-    @yield('content')
+<div id="app">
+    @include('partials.header')
+    <div class="container-fluid">
+        @yield('content')
+    </div>
 </div>
 @include('partials.footer')
 <!-- Bootstrap core JavaScript -->
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 @yield('scripts')
 </body>
 </html>

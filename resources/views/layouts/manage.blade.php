@@ -41,19 +41,24 @@
     @yield('styles')
 </head>
 <body>
-@include('partials.header')
-<div class="container-fluid">
-    <div class="row">
-        @include('partials.manage-sidebar')
+<div id="app">
+    @include('partials.header')
+    <div class="container-fluid">
+        <div class="row">
+            @include('partials.manage-sidebar')
 
-        @yield('content')
+            @yield('content')
+        </div>
     </div>
 </div>
 @include('partials.footer')
 <!-- Bootstrap core JavaScript -->
 <script src="{{ URL::to('js/jquery.min.js') }}"></script>
-<script src="{{ URL::to('js/tether.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ URL::to('js/bootstrap.min.js') }}"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 @yield('scripts')
 </body>
 </html>

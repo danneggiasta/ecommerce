@@ -7,7 +7,7 @@
 body {
     padding-top: 54px;
     font-family: 'Saira', sans-serif;
-    background: #fdfff9;
+    background: rgb(253, 244, 252);
 }
 
 a {
@@ -20,27 +20,50 @@ a:hover {
 }
 
 .sidebar {
-	background: #f1f1f1 !important;
-	min-height: 100vh;
-	min-width: 220px;
-	padding: 40px 0 0 20px;
+    background: #f1f1f1 !important;
+    min-height: 100vh;
+    min-width: 220px;
+    padding: 40px 0 0 20px;
 }
 
 .sidebar p {
-	font-size: 18px;
-	font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .sidebar .nav-link {
-	border-left: 1px solid #111;
+    border-left: 1px solid #111;
 }
 
 .navbar {
-    box-shadow: 1px 2px 3px 3px #111;
+    /*box-shadow: 1px 2px 3px 3px #111;*/
 }
 
 .navbar a:hover {
     cursor: pointer;
+}
+
+.page-item a {
+    color: #343A40;
+}
+
+.page-item a:hover {
+    color: #343A40;
+}
+
+.page-item.active .page-link {
+    background-color: #343A40;
+    border-color: #343A40;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: #59636d;
+    border-color: #59636d;
 }
 
 @media (min-width: 992px) {

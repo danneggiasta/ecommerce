@@ -4,6 +4,15 @@
             <p>General</p>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="{{route('manage.dashboard')}}">Dashboard</a>
+        </li>
+    </ul>
+
+    <ul class="nav nav-pills flex-column mt-3">
+        <li class="nav-item">
+            <p>PC SHOP</p>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
         </li>
     </ul>
@@ -13,7 +22,7 @@
             <p>Administration</p>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Manage Users</a>
+            <a class="nav-link" href="{{ route('users.index') }}">Manage Users</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Roles</a>
